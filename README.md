@@ -106,9 +106,9 @@ The system includes:
 
 ## Troubleshooting
 
-- Check container logs: `docker-compose logs [service]`
-- Verify Redis connection: `docker-compose exec redis redis-cli ping`
-- Check queue length manually: `docker-compose exec redis redis-cli LLEN bull:jobs:wait`
+- Check container logs: `docker compose logs [service]`
+- Verify Redis connection: `docker compose exec redis redis-cli ping`
+- Check queue length manually: `docker compose exec redis redis-cli LLEN bull:jobs:wait`
 
 Webhook URL example:
 Webhooks use your cloudflare subdomain name not local host, example:
